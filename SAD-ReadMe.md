@@ -23,11 +23,46 @@ The Personal Learning Coach Agent is an AI-powered assistant designed to help in
 ---
 
 ## 3. System Architecture Diagram
-[React UI] ⇄ [.NET 8 Web API] ⇄ [SQL DB]
-⇡
-[Python Agent / Azure Function]
-⇅
-[Vector DB + LLM (OpenAI/GPT-4)]
++-------------------------+
+|     React Frontend      |
+|  (Learning Dashboard)   |
++-----------+-------------+
+            |
+            v
++-----------+-------------+
+|    .NET 8 Web API       |
+| (User Auth, Profile,    |
+|  Goal Management)       |
++-----------+-------------+
+            |
+    +-------+--------+
+    | User Data (DB) |
+    | SQL Server     |
+    +----------------+
+            |
+            v
++------------------------------+
+|   Python AI Agent (LLM)      |
+| - Learning Plan Generator    |
+| - Progress Evaluator         |
+| - Daily Task Recommender     |
++------------------------------+
+            |
+            v
++------------------------------+
+|   Vector Store (RAG System)  |
+|  - Pinecone / Qdrant         |
+|  - Stores & searches context |
+|    from curated learning     |
+|    content (docs/videos)     |
++------------------------------+
+            |
+            v
++------------------------------+
+|  OpenAI / Azure OpenAI GPT   |
+|  - LLM for reasoning,        |
+|    task planning, and Q&A    |
++------------------------------+
 
 
 ---
