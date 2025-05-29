@@ -92,7 +92,7 @@ The Personal Learning Coach Agent is an AI-powered assistant designed to help in
 - **Progress Analytics**
 - **Notification & Nudging System**
 
-🧩 Module-Level Breakdown
+### 5.1 🧩 Module-Level Breakdown
 Each module includes:
 
 🔹 Name
@@ -105,7 +105,7 @@ Each module includes:
 
 🔹 Delivery Goal
 
-### 🔐 1. Authentication & User Management Module
+#### 🔐 1. Authentication & User Management Module
 Responsibilities:
 
 * Register/Login users
