@@ -23,7 +23,7 @@ The Personal Learning Coach Agent is an AI-powered assistant designed to help in
 ---
 
 ## 3. System Architecture Diagram
-`
+```
 +-------------------------+
 |     React Frontend      |
 |  (Learning Dashboard)   |
@@ -64,7 +64,7 @@ The Personal Learning Coach Agent is an AI-powered assistant designed to help in
 |  - LLM for reasoning,        |
 |    task planning, and Q&A    |
 +------------------------------+
-`
+```
 
 ---
 
