@@ -95,15 +95,15 @@ The Personal Learning Coach Agent is an AI-powered assistant designed to help in
 🧩 Module-Level Breakdown
 Each module includes:
 
-* 🔹 Name
+🔹 Name
 
-* 🔹 Responsibilities
+🔹 Responsibilities
 
-* 🔹 Tech Stack
+🔹 Tech Stack
 
-* 🔹 Input/Output
+🔹 Input/Output
 
-* 🔹 Delivery Goal
+🔹 Delivery Goal
 
 ### 🔐 1. Authentication & User Management Module
 Responsibilities:
@@ -125,126 +125,126 @@ Responsibilities:
 #### 🎯 2. Goal & Skill Tracker Module
 Responsibilities:
 
-Let users define learning goals and target skills
+* Let users define learning goals and target skills
 
-Store timelines and preferences
+* Store timelines and preferences
 
-Tech Stack: .NET 8 Web API + SQL Server
+* Tech Stack: .NET 8 Web API + SQL Server
 
-Input: Goal name, topic, timeframe, difficulty level
+* Input: Goal name, topic, timeframe, difficulty level
 
-Output: Structured user goal object
+* Output: Structured user goal object
 
-Delivery Goal: API endpoints for goal CRUD + UI form
+* Delivery Goal: API endpoints for goal CRUD + UI form
 
 #### 🧠 3. AI Agent Module
 Responsibilities:
 
-Accept goals and user profiles
+* Accept goals and user profiles
 
-Generate personalized learning plans
+* Generate personalized learning plans
 
-Recommend daily/weekly tasks
+* Recommend daily/weekly tasks
 
-Tech Stack: Python + LangChain + OpenAI GPT-4 / Azure OpenAI
+* Tech Stack: Python + LangChain + OpenAI GPT-4 / Azure OpenAI
 
-Input: Goal, skill profile, past progress
+* Input: Goal, skill profile, past progress
 
-Output: Structured learning plan (tasks, resources)
+* Output: Structured learning plan (tasks, resources)
 
-Delivery Goal: Flask/FastAPI microservice with basic planning logic
+* Delivery Goal: Flask/FastAPI microservice with basic planning logic
 
 #### 📚 4. Content Retrieval (RAG) Module
 Responsibilities:
 
-Use a vector store to semantically search curated content
+* Use a vector store to semantically search curated content
 
-Power the agent’s resource suggestions
+* Power the agent’s resource suggestions
 
-Tech Stack: Python + Pinecone / Qdrant + LangChain
+* Tech Stack: Python + Pinecone / Qdrant + LangChain
 
-Input: Goal/topic query from AI Agent
+* Input: Goal/topic query from AI Agent
 
-Output: Ranked resource list (title, URL, summary)
+* Output: Ranked resource list (title, URL, summary)
 
-Delivery Goal: Index pre-curated docs and support semantic search
+* Delivery Goal: Index pre-curated docs and support semantic search
 
 #### 📈 5. Progress Tracker & Feedback Module
 Responsibilities:
 
-Allow users to mark task progress
+* Allow users to mark task progress
 
-Adjust future plans based on feedback and history
+* Adjust future plans based on feedback and history
 
-Tech Stack: .NET 8 Web API + SQL Server + React
+* Tech Stack: .NET 8 Web API + SQL Server + React
 
-Input: Task status updates, feedback
+* Input: Task status updates, feedback
 
-Output: Updated progress profile, feedback log
+* Output: Updated progress profile, feedback log
 
-Delivery Goal: API + UI for marking and viewing progress
+* Delivery Goal: API + UI for marking and viewing progress
 
 #### 📢 6. Nudging & Notification Module
 Responsibilities:
 
-Send motivational messages or reminders
+* Send motivational messages or reminders
 
-Notify users of task changes or deadlines
+* Notify users of task changes or deadlines
 
-Tech Stack: .NET Background Jobs (Hangfire) or Azure Functions + Email/WhatsApp API
+* Tech Stack: .NET Background Jobs (Hangfire) or Azure Functions + Email/WhatsApp API
 
-Input: User schedule, inactivity signals
+* Input: User schedule, inactivity signals
 
-Output: Message trigger (email/SMS/push)
+* Output: Message trigger (email/SMS/push)
 
-Delivery Goal: Scheduled reminders + optional manual trigger UI
+* Delivery Goal: Scheduled reminders + optional manual trigger UI
 
 #### 📊 7. Dashboard & UI Module
 Responsibilities:
 
-Central UI for goal setup, plan view, task updates
+* Central UI for goal setup, plan view, task updates
 
-Progress visualization and recommendations
+* Progress visualization and recommendations
 
-Tech Stack: React + TypeScript + Zustand or Redux
+* Tech Stack: React + TypeScript + Zustand or Redux
 
-Input: API data (goals, plans, tasks)
+* Input: API data (goals, plans, tasks)
 
-Output: Dynamic UI with interactive views
+* Output: Dynamic UI with interactive views
 
-Delivery Goal: Functional responsive dashboard + login flow
+* Delivery Goal: Functional responsive dashboard + login flow
 
 #### 🧪 8. QA & Observability Module
 Responsibilities:
 
-Logging, error tracking, performance monitoring
+* Logging, error tracking, performance monitoring
 
-Unit and integration test coverage
+* Unit and integration test coverage
 
-Tech Stack: Serilog + Application Insights + xUnit + Postman
+* Tech Stack: Serilog + Application Insights + xUnit + Postman
 
-Input: Runtime events, HTTP traffic
+* Input: Runtime events, HTTP traffic
 
-Output: Logs, metrics, alerts, test reports
+* Output: Logs, metrics, alerts, test reports
 
-Delivery Goal: Centralized logs + basic monitoring alerts
+* Delivery Goal: Centralized logs + basic monitoring alerts
 
 #### ✅ Recommended Delivery Order (MVP)
 Authentication Module
 
-Goal Tracker + UI Form
+* Goal Tracker + UI Form
 
-AI Agent Basic Plan Generator
+* AI Agent Basic Plan Generator
 
-Progress Tracker
+* Progress Tracker
 
-Learning Plan UI Integration
+* Learning Plan UI Integration
 
-Content Search (RAG)
+* Content Search (RAG)
 
-Nudging/Notification System
+* Nudging/Notification System
 
-Observability + Test Coverage
+* Observability + Test Coverage
 
 
 
