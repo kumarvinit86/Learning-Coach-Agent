@@ -92,6 +92,162 @@ The Personal Learning Coach Agent is an AI-powered assistant designed to help in
 - **Progress Analytics**
 - **Notification & Nudging System**
 
+🧩 Module-Level Breakdown
+Each module includes:
+
+* 🔹 Name
+
+* 🔹 Responsibilities
+
+* 🔹 Tech Stack
+
+* 🔹 Input/Output
+
+* 🔹 Delivery Goal
+
+### 🔐 1. Authentication & User Management Module
+Responsibilities:
+
+* Register/Login users
+
+* Manage user sessions and tokens
+
+* Role-based access (optional)
+
+* Tech Stack: .NET 8 Web API + Identity / Azure AD B2C
+
+* Input: Email, password, OAuth tokens
+
+* Output: JWT token, user context
+
+* Delivery Goal: Auth API + frontend integration
+
+#### 🎯 2. Goal & Skill Tracker Module
+Responsibilities:
+
+Let users define learning goals and target skills
+
+Store timelines and preferences
+
+Tech Stack: .NET 8 Web API + SQL Server
+
+Input: Goal name, topic, timeframe, difficulty level
+
+Output: Structured user goal object
+
+Delivery Goal: API endpoints for goal CRUD + UI form
+
+#### 🧠 3. AI Agent Module
+Responsibilities:
+
+Accept goals and user profiles
+
+Generate personalized learning plans
+
+Recommend daily/weekly tasks
+
+Tech Stack: Python + LangChain + OpenAI GPT-4 / Azure OpenAI
+
+Input: Goal, skill profile, past progress
+
+Output: Structured learning plan (tasks, resources)
+
+Delivery Goal: Flask/FastAPI microservice with basic planning logic
+
+#### 📚 4. Content Retrieval (RAG) Module
+Responsibilities:
+
+Use a vector store to semantically search curated content
+
+Power the agent’s resource suggestions
+
+Tech Stack: Python + Pinecone / Qdrant + LangChain
+
+Input: Goal/topic query from AI Agent
+
+Output: Ranked resource list (title, URL, summary)
+
+Delivery Goal: Index pre-curated docs and support semantic search
+
+#### 📈 5. Progress Tracker & Feedback Module
+Responsibilities:
+
+Allow users to mark task progress
+
+Adjust future plans based on feedback and history
+
+Tech Stack: .NET 8 Web API + SQL Server + React
+
+Input: Task status updates, feedback
+
+Output: Updated progress profile, feedback log
+
+Delivery Goal: API + UI for marking and viewing progress
+
+#### 📢 6. Nudging & Notification Module
+Responsibilities:
+
+Send motivational messages or reminders
+
+Notify users of task changes or deadlines
+
+Tech Stack: .NET Background Jobs (Hangfire) or Azure Functions + Email/WhatsApp API
+
+Input: User schedule, inactivity signals
+
+Output: Message trigger (email/SMS/push)
+
+Delivery Goal: Scheduled reminders + optional manual trigger UI
+
+#### 📊 7. Dashboard & UI Module
+Responsibilities:
+
+Central UI for goal setup, plan view, task updates
+
+Progress visualization and recommendations
+
+Tech Stack: React + TypeScript + Zustand or Redux
+
+Input: API data (goals, plans, tasks)
+
+Output: Dynamic UI with interactive views
+
+Delivery Goal: Functional responsive dashboard + login flow
+
+#### 🧪 8. QA & Observability Module
+Responsibilities:
+
+Logging, error tracking, performance monitoring
+
+Unit and integration test coverage
+
+Tech Stack: Serilog + Application Insights + xUnit + Postman
+
+Input: Runtime events, HTTP traffic
+
+Output: Logs, metrics, alerts, test reports
+
+Delivery Goal: Centralized logs + basic monitoring alerts
+
+#### ✅ Recommended Delivery Order (MVP)
+Authentication Module
+
+Goal Tracker + UI Form
+
+AI Agent Basic Plan Generator
+
+Progress Tracker
+
+Learning Plan UI Integration
+
+Content Search (RAG)
+
+Nudging/Notification System
+
+Observability + Test Coverage
+
+
+
 ---
 
 ## 6. Data Flow
