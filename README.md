@@ -1,4 +1,4 @@
-# Product Requirements Document (PRD)
+# Personal Learning Coach Agent 
 ## Project: Personal Learning Coach Agent
 
 ---
